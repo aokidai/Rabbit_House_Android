@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertKhachHang">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvHoaDon"
+        android:background="#ffcc"
+        android:gravity="center"
+        android:text="THÊM HÓA ĐƠN"
+        android:textSize="30sp"/>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TableLayout1"
+        android:layout_marginLeft="10sp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvHoaDon"
+        android:layout_marginTop="17dp"
+        android:stretchColumns="*">
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvHDTenKH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên KH: "/>
+           <Spinner
+               android:id="@+id/spTenKH"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvHDMon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Món: "/>
+            <Spinner
+                android:id="@+id/spMon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvHDSoLuong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số Lượng: "/>
+            <EditText
+                android:id="@+id/txtHDSoLuong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10">
+            </EditText>
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0sp"
+        android:layout_below="@+id/TableLayout1">
+        <Button
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLuuInsertHD"
+            android:text="Thêm"
+            android:layout_marginLeft="18dp"/>
+        <Button
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnXoaInsertHD"
+            android:text="Xóa trắng"
+            android:layout_weight="0.44"/>
+        <Button
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDongInsertHD"
+            android:text="Đóng" />
+    </LinearLayout>
+</RelativeLayout>

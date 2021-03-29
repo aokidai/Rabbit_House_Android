@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InsertKhachHang">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvEditHoaDon"
+        android:background="#ffcc"
+        android:gravity="center"
+        android:text="CẬP NHẬT HÓA ĐƠN"
+        android:textSize="30sp"/>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/TableLayout1"
+        android:layout_marginLeft="10sp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvEditHoaDon"
+        android:layout_marginTop="17dp"
+        android:stretchColumns="*">
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvEditHDTenKH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tên KH: "/>
+            <Spinner
+                android:id="@+id/spEditTenKH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvEditHDMon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Món: "/>
+            <Spinner
+                android:id="@+id/spEditMon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvEditHDSoLuong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số lượng: "/>
+            <EditText
+                android:id="@+id/txtEditHDSoLuong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10">
+            </EditText>
+        </TableRow>
+    </TableLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0sp"
+        android:layout_below="@+id/TableLayout1">
+        <Button
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLuuEditHD"
+            android:text="Thêm"
+            android:layout_marginLeft="18dp"/>
+        <Button
+            android:layout_width="100sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnXoaEditHD"
+            android:text="Xóa trắng"
+            android:layout_weight="0.44"/>
+        <Button
+            android:layout_width="80sp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnDongEditHD"
+            android:text="Đóng" />
+    </LinearLayout>
+</RelativeLayout>
