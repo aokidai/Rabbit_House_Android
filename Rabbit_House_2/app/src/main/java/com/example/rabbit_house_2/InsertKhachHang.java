@@ -30,7 +30,7 @@ public class InsertKhachHang extends Activity {
             db = openOrCreateDatabase(mhLogin.DATABASE_NAME, MODE_PRIVATE, null);
             ContentValues values = new ContentValues();
             values.put("TenKH", edtTenKH.getText().toString());
-            values.put("SDT", edtTenKH.getText().toString());
+            values.put("SDT", edtSoDT.getText().toString());
             long id = db.insert("tblKhachhang", null, values);
             if (id!=-1){
                 return id;
